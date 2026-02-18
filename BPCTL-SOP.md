@@ -1,3 +1,18 @@
+first we have to integrate repo in buildpiper
+<img width="1366" height="693" alt="image" src="https://github.com/user-attachments/assets/4e3469be-ccf6-467a-8d33-17a18e4c6706" />
+
+
+<img width="1366" height="693" alt="image" src="https://github.com/user-attachments/assets/6ee39264-62c3-4a2c-8da5-314ad65b8bbd" />
+
+<img width="1366" height="693" alt="image" src="https://github.com/user-attachments/assets/a9e5c613-e75d-4b01-9ff1-3b60bd3057b5" />
+
+you have to configure the secrets
+
+<img width="1366" height="693" alt="image" src="https://github.com/user-attachments/assets/5af1a53b-fade-4e8a-8506-11b021bb1e49" />
+
+and click on save 
+
+setup the enviroment for service
 
 
 
@@ -34,5 +49,6 @@ and enter the file path including values.yaml
 Disable the prehook and post hook
 <img width="1122" height="198" alt="image" src="https://github.com/user-attachments/assets/b54c4e30-75e5-4d74-b3b2-6c8e24efa57f" />
 and than save and continue 
+
 
 
