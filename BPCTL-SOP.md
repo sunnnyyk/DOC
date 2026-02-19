@@ -1,4 +1,21 @@
-first we have to integrate repo in buildpiper
+# SOP: Service Onboarding in BuildPiper
+
+## Objective
+
+This document explains the step-by-step process to onboard a new service in BuildPiper from scratch, including repository integration, environment setup, deployment configuration, and Helm template configuration.
+
+## step 1 : Integrate Repository in BuildPiper
+
+ ### Step 1.1: Connect Git Repository
+
+First, integrate your Git repository in BuildPiper.
+
+Navigate to Integration
+
+Select your Git provider
+
+Authenticate and connect repository
+
 <img width="1366" height="693" alt="image" src="https://github.com/user-attachments/assets/4e3469be-ccf6-467a-8d33-17a18e4c6706" />
 
 
@@ -49,6 +66,7 @@ and enter the file path including values.yaml
 Disable the prehook and post hook
 <img width="1122" height="198" alt="image" src="https://github.com/user-attachments/assets/b54c4e30-75e5-4d74-b3b2-6c8e24efa57f" />
 and than save and continue 
+
 
 
 
