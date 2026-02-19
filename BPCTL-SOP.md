@@ -10,16 +10,12 @@ This document explains the step-by-step process to onboard a new service in Buil
 
 First, integrate your Git repository in BuildPiper.
 
-Navigate to Integration
+Navigate to Integration and click on add repo and select the VCS (Github, Bitbucket and Gitlab)
 
-Select your Git provider
-
-Authenticate and connect repository
 
 <img width="1366" height="693" alt="image" src="https://github.com/user-attachments/assets/4e3469be-ccf6-467a-8d33-17a18e4c6706" />
 
-
-<img width="1366" height="693" alt="image" src="https://github.com/user-attachments/assets/6ee39264-62c3-4a2c-8da5-314ad65b8bbd" />
+And configure all the details
 
 <img width="1366" height="693" alt="image" src="https://github.com/user-attachments/assets/a9e5c613-e75d-4b01-9ff1-3b60bd3057b5" />
 
@@ -66,6 +62,7 @@ and enter the file path including values.yaml
 Disable the prehook and post hook
 <img width="1122" height="198" alt="image" src="https://github.com/user-attachments/assets/b54c4e30-75e5-4d74-b3b2-6c8e24efa57f" />
 and than save and continue 
+
 
 
 
