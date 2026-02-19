@@ -19,14 +19,30 @@ And configure all the details
 
 <img width="1366" height="693" alt="image" src="https://github.com/user-attachments/assets/a9e5c613-e75d-4b01-9ff1-3b60bd3057b5" />
 
-you have to configure the secrets
+### Step 1.2: Configure Secrets
+
+After repository integration:
+
+choose the secret if you have existing secrets otherwise create a new serets
+
+click on new secret
+
+Add required credentials (repo name, tokens, etc.)
+
+Click Save
+
 
 <img width="1366" height="693" alt="image" src="https://github.com/user-attachments/assets/5af1a53b-fade-4e8a-8506-11b021bb1e49" />
 
-and click on save 
+and complete the repo integration part steps 1.1 and than save the configuration
 
-setup the enviroment for service
+ ## Step 2: setup the enviroment for service
 
+### Step 2.1: Select enviroment
+
+ select the existing enviroment if any otherwise create it manually inside your application
+
+ 
 
 
 Select your existing application
@@ -62,6 +78,7 @@ and enter the file path including values.yaml
 Disable the prehook and post hook
 <img width="1122" height="198" alt="image" src="https://github.com/user-attachments/assets/b54c4e30-75e5-4d74-b3b2-6c8e24efa57f" />
 and than save and continue 
+
 
 
 
