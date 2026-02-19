@@ -10,12 +10,12 @@ This document explains the step-by-step process to onboard a new service in Buil
 
 First, integrate your Git repository in BuildPiper.
 
-Navigate to Integration and click on add repo and select the VCS (Github, Bitbucket and Gitlab)
+Navigate to Integration and click on add repo and select the VCS (Github, Bitbucket and Gitlab) And configure all the details.
 
 
 <img width="1366" height="693" alt="image" src="https://github.com/user-attachments/assets/4e3469be-ccf6-467a-8d33-17a18e4c6706" />
 
-And configure all the details
+
 
 <img width="1366" height="693" alt="image" src="https://github.com/user-attachments/assets/a9e5c613-e75d-4b01-9ff1-3b60bd3057b5" />
 
@@ -36,48 +36,120 @@ Click Save
 
 and complete the repo integration part steps 1.1 and than save the configuration
 
- ## Step 2: setup the enviroment for service
+ ## Step 2: setup the application for service
 
-### Step 2.1: Select enviroment
+### Step 2.1: Select application
 
- select the existing enviroment if any otherwise create it manually inside your application
-
- 
-
-
-Select your existing application
+Select your existing application 
 <img width="1366" height="698" alt="image" src="https://github.com/user-attachments/assets/0f1b8f94-964e-405c-b463-c695c8e5254d" />
-add the service that we want to create
+
+Step 2.2: Add New Service
+
+Click Add Service
+
+Enter the service name
 <img width="1366" height="698" alt="image" src="https://github.com/user-attachments/assets/c19f515e-edcf-494c-912e-03d19d1e56da" />
 give the name of the service 
 <img width="1366" height="698" alt="image" src="https://github.com/user-attachments/assets/20d130b0-1979-49db-9eb3-b9edb275d361" />
-after save and continue you have to select the enviroments and job template and save and continue
-when you choosse the enviroments you have to select the registry and imagename (imagename will be demo-grafana/dev/dev-monitoring )  checks the button for all mannual
-disable the push data for insights and then save and continue.
+
+### Step 2.1: Select enviroment
+
+select the existing enviroment if any otherwise create it manually inside your application
+
+ navigate to enviroment overview and click add enviroments
+ and create an enviroment
+
+## step 3: Configure Environments & Job Template
+
+After clicking Save and Continue:
+
+Select the required Environment
+
+Select the Job Template
+
+Click Save and Continue
+
+Important Configuration:
+
+When selecting environments:
+
+Select correct Container Registry
+
+Set Image Name:
+
+demo-grafana/dev/dev-monitoring
+
+
+Enable Manual Trigger for all stages
+
+Disable Push Data for Insights
+
+Click Save and Continue
 <img width="1366" height="639" alt="image" src="https://github.com/user-attachments/assets/243b63e1-c245-42e5-91a2-97135b1291cf" />
-navigate the env deploy detail and select Custom Manifest file/GitOps
+## Step 4: Configure Deployment 
+
+Navigate to Env Deploy Details
+
+Select Custom Manifest File / GitOps
 <img width="1366" height="639" alt="image" src="https://github.com/user-attachments/assets/c08a4319-7e59-4d0f-b8dd-ae3436b115ac" />
 after completeing above steps you will be showing like this
 <img width="1366" height="639" alt="image" src="https://github.com/user-attachments/assets/f8afc63c-688d-450f-a2d2-c532aa795a63" />
-you have to select image pull policy to always & resource kind selection is not mandotory 
+## step 4.1 : Deployment Configuration Settings
+
+Configure the following:
+
+Image Pull Policy → Always
+
+Resource Kind → Not Mandatory
+
 Disable Define Raw Key Value Pairs
-enable Validate Deployment Rollout
-if you have to deploy the CRD than enable the server side apply otherwise disable it.
+
+Enable Validate Deployment Rollout
+
+If deploying CRD → Enable Server Side Apply
+
+Otherwise → Keep it Disabled
 <img width="1097" height="453" alt="image" src="https://github.com/user-attachments/assets/697fbfae-1ad5-43f1-9b1e-c3526368d8ed" />
-next choose via helm template than select git repo
-select the git url and click on load branch 
-and select the branch that you want to choose
-select Enter File or Folder Path and give the file/folder path
-enter the release name 
+## step 5: Configure Helm Template Deployment
+Steps:
+
+Select Git URL
+
+Click Load Branch
+
+Select desired branch
+
+Enter File/Folder Path
+
+Enter Release Name
 <img width="1097" height="453" alt="image" src="https://github.com/user-attachments/assets/ae273731-bbd5-4c3f-8146-9f886ebdd9ea" />
-* in values file section *
-select via git repo 
-same as just we do in previous to select and load branch 
-and enter the file path including values.yaml
+
+## step 6 : Configure Values File
+
+Under Values File Section:
+
+Select → Via Git Repository
+
+Load Branch
+
+Enter values.yaml file path (including file name)
 <img width="1130" height="340" alt="image" src="https://github.com/user-attachments/assets/01a3b1e3-559a-4225-b79b-1e101fcd8c7e" />
-Disable the prehook and post hook
+
+## Final Settings
+
+Disable Pre Hook & Post Hook
+
 <img width="1122" height="198" alt="image" src="https://github.com/user-attachments/assets/b54c4e30-75e5-4d74-b3b2-6c8e24efa57f" />
 and than save and continue 
+After completing all above steps:
+
+Service will be successfully onboarded in BuildPiper
+
+CI/CD pipeline will be configured
+
+Deployment will be ready via Helm template
+
+Environment and registry will be properly configured
 
 
 
